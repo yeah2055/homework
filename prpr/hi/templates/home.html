@@ -1,0 +1,14 @@
+
+hihi
+
+<a  href="{% url 'detail' %}">디테일 페이지로 가기</a>
+
+{{ kkk }}
+
+{% for a in kkk.all %}
+
+<p>{{ a.title }}</p>
+<p>{{ a.pub_date }}</p>
+<h1>{{ a.body }}</h1>
+
+{% endfor %}
