@@ -8,3 +8,8 @@ def home(request):
 
 def detail(request):
     return render(request,"detail.html")
+
+def show(request):
+    # yourtext = request.GET['fulltext']
+    abcde = request.GET["fulltext"]
+    return render(request,"show.html",{"aaa":abcde})
